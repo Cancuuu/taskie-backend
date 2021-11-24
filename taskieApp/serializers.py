@@ -9,7 +9,7 @@ from taskieApp.models import Departments,Employees
 class DepartmentSerializer(serializers.ModelSerializer):
     class Meta:
         model=Departments
-        fields=('DepartmentId', 'DepartmentName') #Indicamos cuales van a ser los campos dentro de 
+        fields=('DepartmentId', 'DepartmentName', 'DepartmentColor') #Indicamos cuales van a ser los campos dentro de 
 
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta: # incluimos la clase "Meta" para indicarle que le vamos a pasar un modelo y no campos en especifico
