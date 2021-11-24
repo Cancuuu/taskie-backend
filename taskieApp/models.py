@@ -6,7 +6,7 @@ from django.db import models
 class Departments(models.Model):
     DepartmentId = models.AutoField(primary_key=True)
     DepartmentName = models.CharField(max_length=50)
-
+    DepartmentColor = models.CharField(max_length=50)
 
 ##Creamos un modelo empleado y le indicamos que necesitamos id, nombre, departamento y fecha de inicio
 class Employees(models.Model):
